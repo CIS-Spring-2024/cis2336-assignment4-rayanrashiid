@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+main {
+    padding: 20px;
+}
+
+.bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headshot-container {
+    margin-right: 20px;
+}
+
+.headshot-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.bio-info {
+    max-width: 600px;
+}
+
+footer {
+    text-align: center;
+    background-color: #C8102E;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2811f3;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #C8102E;
+    border-radius: 5px;
+}
+
+/* Flex container for menu items and events */
+.special-menu-section, .community-events-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Style for images*/
+.special-menu-image {
+    width: auto;
+    max-width: 300px; 
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Adjustments for images */
+.community-events-image {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+}

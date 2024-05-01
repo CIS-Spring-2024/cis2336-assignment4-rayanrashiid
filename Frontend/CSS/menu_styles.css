@@ -1,0 +1,148 @@
+@import url('../CSS/styles.css');
+
+/* Header styles */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+header h1 {
+  margin: 0;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 25px;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 15px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2811f3;
+}
+
+/* Main content styles */
+main {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  margin: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #C8102E;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Menu item styles */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #d8d6d6;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%; 
+  box-sizing: border-box; 
+  transition: box-shadow 0.3s ease-in-out; 
+}
+/* color transition for hover */
+.menu-item h3 {
+  margin-top: 0;
+  transition: color 0.3s ease-in-out;
+}
+/* shadow effect */
+.menu-item:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+}
+
+.menu-item:hover h3 {
+  color: #2811f3; 
+}
+
+.menu-item img {
+  width: auto;  
+  max-width: 150px; 
+  height: auto; 
+  margin-left: 20px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.menu-item img:hover {
+  transform: scale(1.1); /* Slightly scale up the image for hover */
+}
+
+/* Styles for 'More Food Options Coming Soon' */
+.menu-item.coming-soon {
+  text-align: center; 
+  font-weight: bold; 
+  background-color: #d8d6d6; 
+  color: #333; 
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  margin-bottom: 30px; 
+  font-style: italic; 
+  width: 100%; 
+}
+.menu-item.coming-soon:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#cart-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+#cart-items-list {
+  list-style: none; 
+  padding: 0;
+}
+
+#cart-items-list li {
+  padding: 5px 0;
+}
+
+/* style checkout button */
+#cart-container button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #2811f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* Hover effect for button */
+#cart-container button:hover {
+  background-color: #1a0dab;
+}

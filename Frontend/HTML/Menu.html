@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University of Houston Kampus Kravez - Menu</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/menu_styles.css">
+</head>
+<body>
+
+<header>
+  <img src="../img/logo.png" alt="UH logo" class="header-logo">
+  <h1>Welcome to University of Houston - Kampus Kravez</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="Cart.html">Cart</a></li>
+      <li><a href="OwnersBio.html">Biography</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="menu-container">
+  <!-- Menu items will be added here by using Menu.js -->
+</main>
+
+<!-- Cart Display -->
+<form id="order-form">
+  <div id="cart-container">
+    <h2>Your Cart</h2>
+    <ul id="cart-items-list">
+      <!-- Cart items insert by ShoppingCart.js -->
+    </ul>
+    <p id="cart-total-price">Total: $0.00</p>
+    <!-- Submit button for form -->
+    <input type="submit" value="Checkout">
+  </div>
+</form>
+
+<footer>
+  <p>&copy; 2024 UoH Sugarland Cafeteria. ALL RIGHTS RESERVED.</p>
+</footer>
+
+<!-- link JavaScript files -->
+<script src="../JS/Menu.js"></script>
+<script src="../JS/ShoppingCart.js"></script>
+
+<script>
+document.getElementById('order-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const orderData = {
+    items: cart
+  };
+
+  // redirecting to the confirmation page
+  window.location.href = 'Order-confirmation.html';
+});
+</script>
+
+</body>
+</html>

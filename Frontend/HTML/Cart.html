@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University of Houston Kampus Kravez - Cart</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/cart_styles.css">
+</head>
+<body>
+
+<header>
+  <img src="../img/logo.png" alt="UH logo" class="header-logo">
+  <h1>University of Houston - Kampus Kravez Cart</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="Cart.html">Cart</a></li>
+      <li><a href="OwnersBio.html">Biography</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="cart-container">
+  <h2>Your Cart</h2>
+  <!-- Content added by js -->
+  <div id="cart-items">
+    <table>
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items-list"> <!-- Cart items inserted here by js -->
+      </tbody>
+    </table>
+  </div>
+  <div id="checkout-container">
+    <p id="cart-total">Total: $0.00</p>
+    <button id="checkout-button">Proceed to Checkout</button>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 UoH Sugarland Cafeteria. ALL RIGHTS RESERVED.</p>
+</footer>
+
+<script src="../JS/Cart.js"></script>
+</body>
+</html>
