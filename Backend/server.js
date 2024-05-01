@@ -16,7 +16,7 @@ app.get('/menu', (req, res) => {
 
 // POST route to handle form submission
 app.post('/submit-order', (req, res) => {
-  const orderData = req.body; // This will be the JSON payload from your AJAX request
+  const orderData = req.body; 
   console.log(orderData);
 
   // Check if the orderData is structured correctly
@@ -32,8 +32,7 @@ app.post('/submit-order', (req, res) => {
       return total + itemTotal;
     }, 0);
 
-    // Here you might save the order to a database or perform other processing
-    // For now, let's just log the calculated total cost
+
     console.log(`Total Cost of the Order: $${totalCost.toFixed(2)}`);
 
     // Respond with success and the total cost
